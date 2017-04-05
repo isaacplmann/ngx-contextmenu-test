@@ -1,3 +1,8 @@
-<h1>
+<h1 [contextMenu]="contextMenu" [contextMenuSubject]="{}">
   {{title}}
 </h1>
+<context-menu #contextMenu>
+  <ng-template contextMenuItem>
+    Test
+  </ng-template>
+</context-menu>
